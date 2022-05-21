@@ -1,0 +1,380 @@
+:root {
+  --linear-gradient: 215deg, #dab974 0%, #835c09 74%;
+  --soft-brown: #fff5e1;
+  --brown: #503927;
+  --warm-black: #272523;
+  --orange: #EC9227;
+  --soft-gray: #f8f8f8;
+  --off-white: #f4f5ee;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "DM-Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  height: 370px;
+  text-align: center;
+  background: linear-gradient(var(--linear-gradient));
+}
+
+header img {
+  width: 200px;
+
+  margin-top: 20px;
+  align-self: center;
+}
+
+.header__title-container {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  height: 218px;
+  margin-top: 5px;
+  text-align: center;
+  align-self: center;
+}
+
+.header__title-container h1 {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 2.3rem;
+  color: var(--white);
+}
+
+.header__title-container p {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: var(--soft-brown);
+}
+
+.header__title-container .header-button {
+  position: absolute;
+  left: calc(50% - 114px);
+  top: 310px;
+  display: block;
+  margin-top: 35px;
+  padding: 14px;
+  width: 240px;
+  height: 48px;
+  background-color: var(--off-white);
+  box-shadow: 0px 5px 10px rgba(63, 52, 21, 0.274);
+  border: none;
+  border-radius: 7px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--brown);
+}
+
+.header-button span {
+  display: inline-block;
+  width: 18px;
+  height: 8px;
+  margin-left: 6px;
+  background-image: url("../resources/icons/down-arrow.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.main-services-detail {
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 20px 10px;
+  background-color: var(--soft-gray);
+}
+
+.services-detail__title h2 {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.5rem;
+  text-align: center;
+  color: var(--brown);
+}
+
+.services-detail__card {
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  min-height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--brown);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(63, 52, 21, 0.555);
+}
+
+.services-detail__card .empanadas {
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  margin-bottom: 10px;
+  background-image: url("../resources/icons/EmpanadaIcon.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.services-detail__card .fresco {
+  display: inline-block;
+  width: 50px;
+  height: 43px;
+  margin-bottom: 10px;
+  background-image: url("../resources/icons/FreshIcon.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.services-detail__card .postres {
+  display: inline-block;
+  width: 50px;
+  height: 47px;
+  margin-bottom: 10px;
+  background-image: url("../resources/icons/PostresIcon.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.services-detail__card .delivery {
+  display: inline-block;
+  width: 75px;
+  height: 35px;
+  margin-bottom: 10px;
+  background-image: url("../resources/icons/DeliveryIcon.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.services__card-title {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--soft-brown);
+}
+
+.services__card-body {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--white);
+}
+
+.mh-img-container{
+  width: 100%;
+  min-width: 320px;
+  height: 50vh;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../resources/img/empanadas.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.mh-img-container h2 {
+  padding-top: 60px;
+  font-size: 4.4rem;
+  font-weight: bold;
+  line-height: 4.6rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.main-products-container {
+  width: 100%;
+  min-height: 35rem;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.main-products-container h2 {
+  padding-top: 50px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--brown);
+}
+
+.main-products-container p {
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: #757575;
+}
+
+.products-container--slider {
+  display: flex;
+  height: 45rem;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+
+.products-container--card {
+  position: relative;
+  scroll-snap-align: center;
+  width: 70%;
+  min-width: 250px;
+  max-width: 25rem;
+  height: 38.0rem;
+  margin: 50px 30px 0;
+  background-color: var(--white);
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.products-container--card .recommended {
+  position: absolute;
+  width: 120px;
+  height: 31px;
+  left: calc(50% - 60px);
+  top: -15px;
+  margin: 0;
+  padding: 6px;
+  background-color: var(--brown);
+  border-radius: 8px;
+  color: var(--white);
+}
+
+.product-card--title {
+  font-size: 1.4rem;
+  margin-top: 5px;
+  line-height: 1.8rem;
+  font-weight: bold;
+  color: var(--brown);
+  padding: 0 15px;
+}
+
+.product-card .RoscasImg{
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  padding-top: 100%;
+  border-radius: 15px 15px 0 0 ;
+  background-image: url("../resources/img/roscas.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.product-card .empanadasImg{
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  padding-top: 100%;
+  border-radius: 15px 15px 0 0 ;
+  background-image: url("../resources/img/empanadas.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.product-card .pizzaImg{
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  padding-top: 100%;
+  border-radius: 15px 15px 0 0 ;
+  background-image: url("../resources/img/pizza.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.products-container--card .product-card--saving {
+  padding: 5px 15px;
+  text-align: left;
+}
+
+.products-container--card .product-card--price {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 2.3rem;
+  color: black;
+  padding: 0 5px;
+}
+
+
+.product-card--ca {
+  position: absolute;
+  top: 33rem;
+  left: 5rem;
+  width: 145px;
+  height: 4.5rem;
+  background: var(--off-white);
+  border: 2px solid var(--orange);
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: black;
+}
+
+.product-card--ca span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  background-image: url("../resources/icons/arrowIcon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: text-bottom;
+}
+
+footer{
+  display: flex;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(var(--linear-gradient));
+}
+footer section{
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+footer .left ul{
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  list-style: none;
+}
+.left li{
+  margin: 10px 0;
+}
+.left a{
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.footer-img{
+  margin-top: 1rem;
+  width: 13rem;
+  
+}
